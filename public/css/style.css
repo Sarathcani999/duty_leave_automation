@@ -1,0 +1,314 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #b3d2f2;
+	background-size: cover;
+	background-position: centre; 
+}
+
+.login-box {
+	width: 820px;
+	height: 520px;
+	background: rgba(0, 0, 0,0.1);
+	color: #fff;
+	border-radius: 3%;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding-top: 50px;
+	padding-left: 0; 
+	
+	text-align: center;
+	box-shadow: 0 5px 25px rgba(0,0,0,0.25);
+	
+	
+}
+.login-box label {
+	padding-left: 0.4em;
+ }
+.avatar {
+	width: 230px;
+	height: 520px;
+	opacity: 0.5;
+	position: absolute;
+	top: 0%;
+	right: 5%;
+}
+h1 {
+	margin: 0;
+	padding: 0 0 20px;
+font-family: 'Bebas Neue', cursive;
+font-weight: 500;
+font-size: 75px;
+color: grey;
+}
+.login-box p{
+	margin: 0;
+	padding: 0;
+	color: grey;
+	font-size: 18px;
+	font-family: arial;
+	font-weight: bold;
+}
+
+.icons input[name="home"]
+{
+	width: 40;
+	height: 40;
+	position: absolute;
+	top: 10%;
+	left: 22%;
+	opacity: 0.5;
+}
+
+.icons input[name="log"]
+{
+    width: 35;
+	height: 35;
+	position: absolute;
+	top: 10%;
+	left: 26%;
+	opacity: 0.5;
+}
+
+.login-box select{
+	width: 13%;
+	color: grey; 
+	text-align: center;
+	background: #A2BDDA;
+	border-radius: 20px;
+	
+	font-size: 15px;
+	font-family: arial;
+	font-weight: bold;
+	border: 0.5px solid grey;
+}
+
+.login-box input{
+	width: 35%;
+}
+
+.login-box input[type="text"], input[type="password"]
+{
+ 
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 0.5px solid grey;
+  
+	
+	
+	
+	
+	border-radius: 20px;
+	
+	background: transparent;
+	
+	height: 30px;
+	color: black;
+	font-size: 16px;
+}
+
+.login-box input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: grey;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #1c8adb;
+	color: #000;
+}
+form {
+	padding-top: 30px;
+}
+::placeholder {
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   font-family:arial;
+  
+   color: grey;
+   font-weight: bold;
+   text-align: center;
+}
+
+
+
+
+select option { 
+color: grey;
+font-weight: bold;
+ }
+
+
+
+/**********************************************************************************/
+.login-box input[name="teacherin"]
+{
+	width: 200;
+	height: 200;
+	position: absolute;
+	border-radius: 100px;
+	top: 30%;
+	right: 70%; 
+	opacity: 0.6;
+}
+
+.login-box input[name="studentin"]
+{
+	width: 200;
+	height: 200;
+	position: absolute;
+	border-radius: 100px;
+	top: 30%;
+	right: 37.5%; 
+	opacity: 0.6;
+}
+
+.login-box input[name="adminin"]
+{
+	width: 200;
+	height: 200;
+	position: absolute;
+	border-radius: 100px;
+	top: 30%;
+	left: 70%; 
+	opacity: 0.6;
+}
+
+.login-box p[name="teacher"]
+{
+	position: fixed;
+	bottom: 140px;
+	left: 110px;
+}
+
+.login-box p[name="student"]
+{
+	position: fixed;
+	bottom: 140px;
+	left: 380px;
+}
+
+.login-box p[name="admin"]
+{
+	position: fixed;
+	bottom: 140px;
+	right: 115px;
+}
+/*-----------------------------------------------------------------*/
+
+.login-box input[name="admin_staff"]
+{
+	top:210px;
+	position: fixed;
+	left: 30px;
+	height: 100px;
+	width: 30%;
+}
+
+.login-box input[name="admin_student"]
+{
+	top:210px;
+	position: fixed;
+	right: 30px;
+	height: 100px;
+	width: 30%;
+}
+
+.login-box input[name="admin_hod"]
+{
+	top:210px;
+	position: fixed;
+	left: 285px;
+	height: 100px;
+	width: 30%;
+}
+
+
+.login-box input[name="admin_course"]
+{
+	position: fixed;
+	left: 30px;
+	height: 100px;
+	width: 30%;
+	bottom: 100px;
+}
+
+.login-box input[name="admin_link"]
+{
+	position: fixed;
+	right: 30px;
+	height: 100px;
+	width: 30%;
+	bottom: 100px;
+}
+
+.login-box input[name="admin_adv"]
+{
+	position: fixed;
+	left: 285px;
+	height: 100px;
+	width: 30%;
+	bottom: 100px;
+}
+
+
+.logout {
+	width: 40;
+	height: 40;
+	position: absolute;
+	top: 10%;
+	left: 26%;
+	opacity: 1;
+	border-radius: 100px;
+	
+	
+	
+	border: none;
+	outline: none;
+	
+	background: grey;
+	color: #fff;
+	font-size: 18px;
+	
+	}
+	.logbutton{
+	width: 20;
+	height: 20;
+	position: absolute;
+	top: 27%;
+	left: 26%;
+	opacity: 1;
+	}
+p{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	
+}
+
+.mark {
+	border: none;
+	outline: none;
+	height: 40px;
+	background: grey;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}

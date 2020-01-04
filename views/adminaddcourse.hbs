@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+	<title> CET DUTY LEAVE AUTOMATION </title>
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+	<div class="login-box">
+		<img src="/img/teach_icon.png" class="avatar">
+
+		<h1> Add Course </h1>
+		<form action="/admin/addcourse" method="post">
+
+
+			<input type="text" placeholder="Enter Course ID" name="id" required> <br>
+
+			<input type="text" placeholder="Enter Course Name" name="name" required> <br><br>
+
+			<input type="submit" name="submit" value="Submit">
+		</form>
+	</div>
+	<div class="icons">
+		<a href="/admin/home">
+			<input name="home" type="image" src="/img/home_icon.png">
+		</a>
+		<form method="post" action="/admin/logout">
+			<button type="submit" class="logout"><img src="/img/logout_icon.png" class="logbutton"></button>
+		</form>
+	</div>
+	<p class="footer"> CET DUTY LEAVE AUTOMATION</p>
+</body>
+
+</html>

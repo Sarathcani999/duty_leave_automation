@@ -1,0 +1,80 @@
+<html>
+
+<head>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: white;
+            background-size: cover;
+            background-position: centre;
+        }
+
+
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <h2>Name : {{name}}</h2> <br>
+
+        <h2>
+            View Duty Leave Application
+        </h2>
+        <hr><br>
+        
+        <table style="width:100%">
+            <tr>
+                <th>Name of Applicant</th>
+                <th>Subject</th>
+                <th>Description</th>
+                <th colspan="2">Date and Hour for application</th>
+                <th>Date of Application</th>
+                <th>Approve</th>
+            </tr>
+            {{#each results}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.subject}}</td>
+                <td>{{this.description}}</td>
+                <td>{{this.date_for_application}}</td>
+                <td>{{this.hour}}</td>
+                <td>{{this.date_of_application}}</td>
+                <form action="/api/approvedhod" method="post">
+                    <input type="hidden" value="{{this.id}}" name="dutyleave">
+                    <td><button type="submit">Approve</button></td>
+                </form>
+
+            </tr>
+            {{/each}}
+        </table>
+
+
+        <br><br><br>
+        <hr>
+        <form action="/api/logout" method="post">
+            <button type="submit">logout</button>
+        </form>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<html>
+
+<head>
+
+    <title> Add Staff </title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/cbostyle.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <center>
+        <div>
+
+            <h1> Mark attandence </h1>
+            <br>
+            {{#if results}}
+
+
+            <form action="/api/tickabsent" method="post">
+               
+                <p>Date</p>
+                <input type="date" name="date" required>
+                <br><br>
+                <select name="hour" required>
+                    <option value="1">9:00 am - 10:00 am</option>
+                    <option value="2">10:00 am - 11:00 am</option>
+                    <option value="3">11:00 am - 12:00 pm</option>
+                    <option value="4">1:00 pm - 2:00 pm</option>
+                    <option value="5">2:00 pm - 3:00 pm</option>
+                    <option value="6">3:00 pm - 4:00 pm</option>
+                </select>
+                <br><br>
+
+                <ul>
+
+
+
+                    {{#each results}}
+                    <li>
+                        <label>
+
+                            <p>{{this.name}}</p>
+                            <input type="checkbox" name="absent" value="{{this.id}}">
+                            <div class="c-box">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+
+                            </div>
+
+                        </label>
+                    </li>
+                    {{!-- <input type="checkbox" name="absent" value="{{this.id}}">
+                    <label for="absent">{{this.name}}</label> --}}
+                    {{/each}}
+                    
+
+                </ul>
+
+                <input type="hidden" name="dsc_id" value="{{ course }}">
+                <br>
+                <input type="submit" class="mark" value="Mark">
+            </form>
+
+            {{/if}}
+
+            <form action="/api/logout" method="post">
+                <input type="submit" class="mark" value="Logout">
+            </form>
+
+        </div>
+
+
+    </center>
+
+    <p class="footer"> CET DUTY LEAVE AUTOMATION</p>
+</body>
+
+</html>

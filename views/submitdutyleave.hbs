@@ -1,0 +1,42 @@
+<html>
+
+<head>
+
+    <title> Admin Portal </title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="login-box">
+        <center>
+            <h1>Submit Duty Leave</h1>
+
+            <form action="/student/submitdutyleave" method="post"><br>
+                <input type="text" name="subject" placeholder="Subject" required><br>
+                <input type="text" name="description" placeholder="Description" required><br>
+                <input type="date" name="date_for_application" required><br><br>
+                <select name="hour" required>
+                    <option value="1">9:00 am - 10:00 am</option>
+                    <option value="2">10:00 am - 11:00 am</option>
+                    <option value="3">11:00 am - 12:00 pm</option>
+                    <option value="4">1:00 pm - 2:00 pm</option>
+                    <option value="5">2:00 pm - 3:00 pm</option>
+                    <option value="6">3:00 pm - 4:00 pm</option>
+                </select><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <form action="/student/logout" method="post">
+                <input type="submit" value="Logout">
+            </form>
+            <a href="/student/home"><p>home</p></a>
+        </center>
+    </div>
+
+    <p class="footer"> CET DUTY LEAVE AUTOMATION</p>
+</body>
+
+</html>

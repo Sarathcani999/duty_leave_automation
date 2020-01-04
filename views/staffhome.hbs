@@ -1,0 +1,50 @@
+
+
+<html>
+<head>
+
+<title> Admin Portal </title>
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css"  href="/css/style.css">
+
+
+</head>
+
+<body>
+
+	<div class="login-box"> 
+	<center>
+<h1>Staff Portal</h1> <br>
+<p>
+Name : {{ name }}
+<br><br>
+
+ID : {{ id }}
+<br><br>
+Department : {{ dept }}
+<br><br>
+</p>
+<p>
+{{#if hod}}
+  <a href="/api/viewdutyleavehod"> View Duty Leave Applications </a> | 
+{{else if advisor}}
+  <a href="/api/viewdutyleave">View Duty Leave Applications</a> | 
+{{else}}
+ 
+{{/if}}
+
+
+<a href="/api/selectclass">Mark Attandence</a>
+</p>
+<br><br><br>
+<form action="/api/logout" method="post">
+<input type="submit" value="Logout">
+</form>
+</center>
+	</div>
+	
+	
+	
+	<p class="footer"> CET DUTY LEAVE AUTOMATION</p>
+</body>
+</html>

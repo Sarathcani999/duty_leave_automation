@@ -1,0 +1,49 @@
+<html>
+<head>
+
+<title> Admin Portal </title>
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css"  href="/css/style.css">
+
+
+</head>
+
+<body>
+
+	<div class="login-box"> 
+	<h1>admin portal</h1>
+	<a href="/admin/addStaff">
+	<input type="submit" name="admin_staff" value="Add Staff" >
+	</a>
+	<a href="/admin/addStudent">
+	<input type="submit" name="admin_student" value="Add Student" >
+	</a>
+	<a href="/admin/modifyhod">
+	<input type="submit" name="admin_hod" value="Add HOD" >
+	</a>
+	<a href="/admin/addcourse">
+	<input type="submit" name="admin_course" value="Add Course" >
+	</a>
+	<a href="/admin/addstaffadvisor">
+	<input type="submit" name="admin_adv" value="Add Staff Advisor" >
+	</a>
+	<a href="/admin/linkcourseclassstaff">
+	<input type="submit" name="admin_link" value="Link Staff and Course" >
+	</a>
+	</div>
+	
+    <div class="icons">
+	
+	<a href="/admin/home">
+	<input name="home" type="image" src="/img/home_icon.png">
+	</a>
+	<form method="post" action="/admin/logout">
+			<button type="submit" class="logout"><img src="/img/logout_icon.png" class="logbutton"></button>
+		</form>
+	</div>
+	
+	
+	
+	<p class="footer"> CET DUTY LEAVE AUTOMATION</p>
+</body>
+</html>

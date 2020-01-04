@@ -1,0 +1,50 @@
+<html>
+
+<head>
+
+    <title> Admin Portal </title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="login-box">
+        <center>
+            <h1>Student portal</h1> <br>
+            <br>
+            
+            {{!-- <p> - % ()</p> --}}
+            
+<p>
+            <table>
+                <tr>
+                    <th>Subject ID</th>
+                    <th>Percentage</th>
+                    <th>Total Classes</th>
+                </tr>
+                {{#each results}}
+                <tr>
+                    <td>{{this.c_id}}</td>
+                    <td>{{this.percentage}}</td>
+                    <td>{{this.total}}</td>
+                </tr>
+                {{/each}}
+            </table>
+
+</p>
+            <form action="/student/logout" method="post">
+                <input type="submit" value="Logout">
+            </form>
+            <a href="/student/home"><p>home</p></a>
+
+        </center>
+    </div>
+
+    
+    <p class="footer"> CET DUTY LEAVE AUTOMATION</p>
+</body>
+
+</html>
