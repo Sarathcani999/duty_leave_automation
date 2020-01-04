@@ -11,3 +11,12 @@ Step 4 : then from the root directory execute the commands : <br>
 <br><br>
 
 <b>Your app will be up and running at localhost:3000</b>
+
+<hr>
+
+## For Reference
+
+admin credentials : <br>
+username : AD15TVE001<br>
+password : abcd
+
