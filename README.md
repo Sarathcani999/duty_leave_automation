@@ -20,3 +20,8 @@ admin credentials : <br>
 username : AD15TVE001<br>
 password : abcd
 
+<br><br>
+
+To see the documentation goto -> [Documentation](https://github.com/Sarathcani999/duty_leave_automation/blob/master/docs/DLA_docs.pdf)
+
+Shows a brief of the database design and workflow of the project
